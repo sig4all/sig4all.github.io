@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+$base-line-height: 1.5;
+$base-font-size: 16px;
+$text-color: #000;
+$brand-color: #159957;
+
+$header-heading-color: #fff !default;
+$header-bg-color: #159957 !default;
+$header-bg-color-secondary: #155799 !default;
+
+@import "nav", "layout"

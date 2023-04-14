@@ -1,0 +1,22 @@
+<header class="site-header">
+  <a id="skiplink" href="#main-content">Skip to main content</a>
+  <div class="wrapper title-top-bar">
+    <span class="project-name">
+      <a class="site-title" href="{{ .Site.Home.RelPermalink }}">Sig4all</a>
+    </span>
+    <nav class="site-nav" id="menu">
+      <ul class="pure-menu-list">
+        {{ range .Site.Menus.main }}
+          <li class="pure-menu-item">
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+  <div class="hero tall">
+    <h1 class="project-tagline">Enable everybody to sign their digital documents easily, securely and freely.</h1>
+    <a class="btn" href="https://github.com/sig4all/sig4all.github.io">View on Github</a>
+    <a class="btn" href="/how-it-works">Learn More</a>
+  </div>
+</header>

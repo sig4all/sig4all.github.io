@@ -1,0 +1,130 @@
+#skiplink {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  overflow: hidden;
+  height: 1px;
+
+  &:focus {
+    position: static;
+    clip: auto;
+    overflow: visible;
+    height: auto;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #606c71;
+}
+
+.site-title {
+  margin-left: 0px;
+  padding-left: 0px;
+  letter-spacing: -1px;
+
+  img {
+    max-width: 250px;
+    margin-bottom: 14px;
+    margin-top:14px;
+  }
+}
+
+.project-name {
+  margin: 0;
+  font-size: 3.25rem;
+
+  a, a:visited {
+    text-decoration: none;
+    color: $brand-color;
+  }
+}
+
+.site-header {
+  position: relative;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.title-top-bar {
+  display: block;
+  height: 100px;
+}
+
+.hero.tall {
+  background-color: #E1DCD2 no-repeat center center;
+  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  padding: 5rem 6rem;
+  text-align: center;
+}
+
+.page-content {
+  word-wrap: break-word;
+  font-size: 1.1rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: $brand-color;
+  }
+}
+
+.container {
+  background-color: rgba(217, 167, 167, 0.7);
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.project-tagline {
+  margin-bottom: 2rem;
+  font-weight: normal;
+  opacity: 0.7;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  + .btn {
+    margin-left: 1rem;
+  }
+
+  padding: 0.75rem 1rem;
+}
